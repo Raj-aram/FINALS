@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Nandini</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .balloons {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .balloon {
+            width: 50px;
+            height: 70px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #ff6f61, #ff4f81);
+            position: absolute;
+            animation: floatUp 5s linear infinite;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .balloon:nth-child(1) {
+            left: -100px;
+            animation-delay: 0s;
+        }
+
+        .balloon:nth-child(2) {
+            left: 0;
+            animation-delay: 1s;
+            background: radial-gradient(circle, #fdd835, #fbc02d);
+        }
+
+        .balloon:nth-child(3) {
+            left: 100px;
+            animation-delay: 2s;
+            background: radial-gradient(circle, #4caf50, #2e7d32);
+        }
+
+        .frames {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+        .frame {
+            width: 80px;
+            height: 80px;
+            background-size: cover;
+            background-position: center;
+            border: 5px solid #ffffff;
+            border-radius: 10px;
+            animation: rotateFrame 4s linear infinite;
+        }
+
+        .frame:nth-child(1) { background-image: url(img.jpg); }
+        .frame:nth-child(2) { background-image: url(img1.jpg); animation-delay: 0.5s; }
+        .frame:nth-child(3) { background-image: url(img2.jpg); animation-delay: 1s; }
+        .frame:nth-child(4) { background-image: url(img6.jpeg); animation-delay: 1.5s; }
+        .frame:nth-child(5) { background-image: url(img6.jpg); animation-delay: 2s; }
+        .frame:nth-child(6) { background-image: url(img7.jpeg); animation-delay: 2.5s; }
+
+        @keyframes glow {
+            from {
+                text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+            }
+            to {
+                text-shadow: 2px 2px 20px rgba(255, 255, 255, 1);
+            }
+        }
+
+        @keyframes floatUp {
+            from {
+                transform: translate(-50%, 100vh);
+                opacity: 0.8;
+            }
+            to {
+                transform: translate(-50%, -200px);
+                opacity: 0;
+            }
+        }
+
+        @keyframes rotateFrame {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .poem {
+            color: #ffffff;
+            font-size: 1.2em;
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .cake {
+            position: relative;
+            width: 120px;
+            height: 160px;
+            margin: 20px auto;
+            background: #ff6f61;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .cake:before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            background: #ff4f81;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .knife {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            width: 10px;
+            height: 100px;
+            background: silver;
+            transform: translateX(-50%) rotate(45deg);
+            animation: knifeMove 2s ease forwards;
+            display: none;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background: #ff6f61;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: glow 2s ease-in-out infinite alternate;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background: #ff4f81;
+        }
+
+        #message {
+            display: none;
+            margin-top: 20px;
+            color: #ffffff;
+            font-size: 1.2em;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        @keyframes knifeMove {
+            0% {
+                top: -50px;
+            }
+            100% {
+                top: 100px;
+            }
+        }
+
+        @keyframes cutCake {
+            from {
+                height: 200px;
+            }
+            to {
+                height: 0;
+            }
+        }
+
+        p {
+            color: #ffffff;
+            font-size: 1em;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .frame {
+                width: 60px;
+                height: 60px;
+            }
+
+            .poem {
+                font-size: 1em;
+            }
+
+            .cake {
+                width: 100px;
+                height: 140px;
+            }
+
+            .cake:before {
+                width: 30px;
+                height: 30px;
+            }
+
+            .button {
+                font-size: 0.9em;
+                padding: 8px 16px;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+    <script>
+        function showPoem() {
+            document.querySelector('.poem').style.display = 'block';
+        }
+
+        function cutCake() {
+            const cake = document.querySelector('.cake');
+            const knife = document.querySelector('.knife');
+            const message = document.getElementById('message');
+            knife.style.display = 'block';
+            knife.style.animation = 'knifeMove 2s ease forwards';
+            setTimeout(() => {
+                cake.style.animation = 'cutCake 2s ease forwards';
+            }, 1000);
+            setTimeout(() => {
+                knife.style.display = 'none';
+                message.style.display = 'block';
+            }, 3000);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="balloons">
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+        </div>
+        <h1>Happy Birthday Nandini! 🎉</h1>
+        <p>Dear Nandini, you are very beautiful, intelligent, and caring. 🥰</p>
+        <div class="frames">
+            <div class="frame"></div>
+            <div class="frame"></div>
+            <div class="frame"></div>
+            <div class="frame"></div>
+            <div class="frame"></div>
+            <div class="frame"></div>
+        </div>
+        <div class="cake">
+            <div class="knife"></div>
+        </div>
+        <button class="button" onclick="cutCake()">Cut Cake 🎂</button>
+        <div id="message">🎉 Happy Birthday Dear Nandini! 🎉</div>
+    </div>
+</body>
+</html>

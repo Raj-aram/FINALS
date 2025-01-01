@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .left-column {
+            flex: 1;
+            max-width: 50%;
+            padding: 20px;
+        }
+
+        .right-column {
+            flex: 1;
+            max-width: 50%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .courses h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .courses ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .courses li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .courses li:hover {
+            background-color: #0056b3;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .apply-button {
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .apply-button button {
+            background-color: #004080;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        .apply-button button:hover {
+            background-color: #003060;
+        }
+
+        .images img {
+            width: 90%;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        @media screen and (max-width: 768px) {
+            .left-column, .right-column {
+                max-width: 100%;
+            }
+
+            .images img {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>NRI Institute Pharmacy (NIP)</h1>
+</header>
+
+<div class="container">
+    <div class="left-column">
+        <div class="courses">
+            <h2>Courses Available</h2>
+            <ul>
+                <li>Course 1: M. Pharma(Pharmaceutic)</li>
+                <li>Course 2: B. Pharma</li>
+                <li>Course 3: M. Pharma (Pharmaceutical Chemistry)</li>
+               
+                
+            </ul>
+        </div>
+        <div class="apply-button">
+            <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSf5gispaYWlKWVf2cCncloSK81ZbrXGmZDNIQ2xVQSpbBis0w/viewform?embedded=true'">Apply Now</button>
+        </div>
+        
+    </div>
+
+    <div class="right-column">
+        <div class="images">
+            <img src="nri1.jpg" alt="building">
+           
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

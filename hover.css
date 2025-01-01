@@ -1,0 +1,25 @@
+/* General Styles */
+.info-section details {
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-section details:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.apply-button {
+    display: inline-block;
+    background: #1e90ff;
+    color: #0e0c0c;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background 0.3s ease;
+}
+
+.apply-button:hover {
+    background: #007acc;
+}

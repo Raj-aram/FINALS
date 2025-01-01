@@ -1,0 +1,279 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="hover.css">
+    <title>Admission Page</title>  
+
+    <style>  
+        /* Custom font for Bank Gothic */
+        @font-face {
+            font-family: 'Bank Gothic';
+            src: url('path/to/BankGothic.woff2') format('woff2'),
+                 url('path/to/BankGothic.woff') format('woff');
+        }
+
+        /* Applying Bank Gothic font to body and headings */
+        body, h1, h2, p {
+            font-family: 'Bank Gothic', sans-serif;
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: #252325; 
+            }
+            25% {
+                color: #535455; 
+            }
+            50% {
+                color: #040404; 
+            }
+            75% {
+                color: #3e3d3e; 
+            }
+            100% {
+                color: #020202; 
+            }
+        }
+
+        h1 {
+            animation: colorChange 5s infinite;
+        }
+
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 0;  
+            padding: 0;  
+            background: url('rishi.jpg') no-repeat center center fixed;  
+            background-size: cover;  
+            color: #333;  
+        }  
+        header {  
+            background-color: rgba(254, 253, 254, 0.8); /* Semi-transparent background */  
+            color: #fff; /* White text color */  
+            text-align: center;  
+            padding: 1rem 0;  
+            margin-top: 0; /* Remove default margin */  
+            border-radius: 8px 8px 0 0; /* Rounded corners only on top */  
+        }  
+        .container {  
+            max-width: 800px;  
+            margin: 2rem auto;  
+            padding: 1rem;  
+            background: rgba(255, 255, 255, 0.8);  
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  
+            border-radius: 0 0 8px 8px; /* Rounded corners only on bottom */  
+        }  
+        .image-container {  
+            text-align: center;  
+            margin-bottom: 1.5rem;  
+        }  
+        .image-container img {  
+            max-width: 100%;  
+            height: auto;  
+            border-radius: 8px;  
+        }  
+        .content {  
+            text-align: center;  
+        }  
+        .content h1 {  
+            margin-bottom: 1rem;  
+        }  
+        .content p {  
+            line-height: 1.6;  
+        }  
+        .info-section {  
+            margin-top: 2rem;  
+            text-align: left;  
+        }  
+        .info-section h2 {  
+            color: #30b575;  
+            margin-bottom: 1rem;  
+        }  
+        details {  
+            margin-bottom: 1rem;  
+            padding: 1rem;  
+            background-color: #f9f9f9;  
+            border-radius: 4px;  
+            border: 1px solid #ddd;  
+        }  
+        summary {  
+            font-weight: bold;  
+            cursor: pointer;  
+        }  
+        .apply-button {  
+            display: inline-block;  
+            margin-top: 1.5rem;  
+            padding: 0.75rem 1.5rem;  
+            background-color: #28a745;  
+            color: white;  
+            text-decoration: none;  
+            font-size: 1rem;  
+            border-radius: 4px;  
+        }  
+        .apply-button:hover {  
+            background-color: #218838;  
+        }  
+    </style>  
+</head>  
+<body>
+    
+    <header>  
+        <h1>WELCOME TO NRI GROUP OF COLLEGE BHOPAL🌈</h1>  
+    </header>  
+
+    <div class="container">  
+        <div class="image-container">  
+            <img src="nri2.jpg" alt="Admission Banner">  
+        </div>  
+        <div class="content">  
+            <h1>Join Our Community</h1>  
+            <p>We are excited to welcome new students to our institution. Apply now to become part of a vibrant and innovative learning environment. Our admission process is simple and designed to help you achieve your academic and professional goals.</p>  
+
+            <div class="info-section">  
+                <h2>Fee Structure</h2>  
+                <details>  
+                    <summary> Fee Structure</summary>  
+                    <ul>  
+                        <li>B.TECH Fees for all disciplines: 65,000</li>  
+                        <li>In total: 2,60,000</li>  
+                        <li>M.TECH Fees for All Disciplines: 60,000</li>  
+                        <li>In Total: 1,20,000</li>  
+                        <li>B.Pharma Fees for All Disciplines: 85,000</li>  
+                        <li>In Total: 3,40,000</li>  
+                    </ul>  
+                </details>  
+            </div>  
+
+            <div class="info-section">  
+                <h2>Facilities</h2>  
+                <details>  
+                    <summary> Facilities</summary>  
+                    <ul>  
+                        <li>State-of-the-art laboratories</li>  
+                        <li>Well-equipped library with digital access</li>  
+                        <li>Sports complex and gymnasium</li>  
+                        <li>On-campus hostel facilities</li>  
+                        <li>Cafeteria serving healthy meals</li>  
+                    </ul>  
+                </details>  
+            </div>  
+
+            <div class="info-section">  
+                <h2>Courses Offered</h2>  
+                <details>  
+                    <summary> Courses Offered</summary>  
+                    <ul>  
+                        <li>Electronics and Communication (ECE)</li>  
+                        <li>Computer Science and Engineering (CSE)</li>  
+                        <li>Information Technology (IT)</li>  
+                        <li>Electrical and Electronics Engineering (EX)</li>  
+                        <li>Civil Engineering (CE)</li>  
+                        <li>Artificial Intelligence & Machine Learning (AIML)</li>  
+                        <li>Computer Science & Information Technology (CSIT)</li>  
+                    </ul>  
+                </details>  
+            </div>  
+
+            <div class="info-section">  
+                <h2>Faculty</h2>  
+                <!-- Single dropdown box for all faculty -->
+                <details>
+                    <summary>Faculty Information</summary>
+                    <div>
+                        <details>
+                            <summary>Prof. Jalaj Tenguria</summary>
+                            <div class="faculty-info" style="display: flex; align-items: center;">
+                                <img src="JALAJ.jpg" alt="Prof. Jalaj Tenguria" style="width: 100px; height: 120px; margin-right: 15px;">
+                                <div>
+                                    <p><strong>Designation:</strong> Head of Department</p>
+                                    <p><strong>Expertise:</strong> Advanced Machine Learning, Data Science</p>
+                                    <p><strong>Email:</strong> jalaj.tenguria@example.com</p>
+                                </div>
+                            </div>
+                        </details>
+            
+                        <details>
+                            <summary>Prof. Rajesh Prasad</summary>
+                            <div class="faculty-info" style="display: flex; align-items: center;">
+                                <img src="rjsir.jpg" alt="Prof. Rajesh Prasad" style="width: 100px; height: 120px; margin-right: 15px;">
+                                <div>
+                                    <p><strong>Designation:</strong> Professor</p>
+                                    <p><strong>Expertise:</strong> Circuit Theory, Electronics</p>
+                                    <p><strong>Email:</strong> rajesh.prasad@example.com</p>
+                                </div>
+                            </div>
+                        </details>
+            
+                        <details>
+                            <summary>Prof. Divyanshu Bhatnagar</summary>
+                            <div class="faculty-info" style="display: flex; align-items: center;">
+                                <img src="divyanshu.jpg" alt="Prof. Divyanshu Bhatnagar" style="width: 100px; height: 120px; margin-right: 15px;">
+                                <div>
+                                    <p><strong>Designation:</strong> Assistant Professor</p>
+                                    <p><strong>Expertise:</strong> Software Development, AI</p>
+                                    <p><strong>Email:</strong> divyanshu.bhatnagar@example.com</p>
+                                </div>
+                            </div>
+                        </details>
+            
+                        <details>
+                            <summary>Prof. Gulshan Meena</summary>
+                            <div class="faculty-info" style="display: flex; align-items: center;">
+                                <img src="faculty4.jpg" alt="Prof. Gulshan Meena" style="width: 100px; height: 120px; margin-right: 15px;">
+                                <div>
+                                    <p><strong>Designation:</strong> Assistant Professor</p>
+                                    <p><strong>Expertise:</strong> Cloud Computing, Networking</p>
+                                    <p><strong>Email:</strong> gulshan.meena@example.com</p>
+                                </div>
+                            </div>
+                        </details>
+            
+                        <details>
+                            <summary>Prof. Rajneesh</summary>
+                            <div class="faculty-info" style="display: flex; align-items: center;">
+                                <img src="faculty5.jpg" alt="Prof. Rajneesh" style="width: 100px; height: 120px; margin-right: 15px;">
+                                <div>
+                                    <p><strong>Designation:</strong> Associate Professor</p>
+                                    <p><strong>Expertise:</strong> Embedded Systems, Robotics</p>
+                                    <p><strong>Email:</strong> rajneesh@example.com</p>
+                                </div>
+                            </div>
+                        </details>
+            
+                        <details>
+                            <summary>Prof. Devendra Bajpai</summary>
+                            <div class="faculty-info" style="display: flex; align-items: center;">
+                                <img src="faculty6.jpg" alt="Prof. Devendra Bajpai" style="width: 100px; height: 120px; margin-right: 15px;">
+                                <div>
+                                    <p><strong>Designation:</strong> Assistant Professor</p>
+                                    <p><strong>Expertise:</strong> Data Analytics, Artificial Intelligence</p>
+                                    <p><strong>Email:</strong> devendra.bajpai@example.com</p>
+                                </div>
+                            </div>
+                        </details>
+            
+                        <details>
+                            <summary>Prof. Divya Sharma</summary>
+                            <div class="faculty-info" style="display: flex; align-items: center;">
+                                <img src="DIVYA.jpg" alt="Prof. Divya Sharma" style="width: 100px; height: 120px; margin-right: 15px;">
+                                <div>
+                                    <p><strong>Designation:</strong> Lecturer</p>
+                                    <p><strong>Expertise:</strong> Mobile App Development, Programming Languages</p>
+                                    <p><strong>Email:</strong> divya.sharma@example.com</p>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+            </div>
+            
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5gispaYWlKWVf2cCncloSK81ZbrXGmZDNIQ2xVQSpbBis0w/viewform?embedded=true" class="apply-button">Apply Now</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScx7_9qsb99Fz74i6pq-SPfA-FBZc67pdSjTt9IGnt4AIaHKA/viewform?embedded=true" class="apply-button">आवेदन करें</a>
+            
+            
+        </div>  
+    </div>  
+</body>  
+</html>

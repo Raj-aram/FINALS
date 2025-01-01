@@ -1,0 +1,108 @@
+/* General Styles */
+body 
+/* Trending Streams Section */
+#trending-streams {
+    background-color: #fdf3f0;
+  }
+  
+  #trending-streams h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .stream-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .stream-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stream-card .icon-box {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9ecea;
+    font-size: 1.5rem;
+    color: #ff5e3a;
+  }
+  
+  .stream-card h5 {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    #trending-streams h2 {
+      font-size: 1.8rem;
+    }
+  
+    .stream-card h5 {
+      font-size: 1rem;
+    }
+  }
+/* Enable hover for dropdown menus */
+.navbar-nav .dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Remove the gap between the dropdown button and menu */
+  }
+  
+  .navbar-nav .dropdown-menu {
+    margin-top: 0;
+    animation: fadeIn 0.2s ease-in-out;
+  }
+  
+  /* Smooth fade-in effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-color: #002f5b;
+    color: white;
+  }
+  
+  .hero-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .hero-section .btn-warning {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+  }
+  
+  /* Ranking Section */
+  .ranking-section h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #002f5b;
+  }
+  
+  /* Footer */
+  footer p {
+    margin: 0;
+  }

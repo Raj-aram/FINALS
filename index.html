@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NRI Institutions - Admissions 2024</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style4.css">
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+
+
+</head>
+<style>
+  .stats-section {
+    background-image: url('background-image.jpg');
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+  }
+
+  .stats-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  .stats-container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .stat-box {
+    padding: 20px;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .stat-label {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+</style>
+
+<body>
+  <!-- Header Section -->
+  <header class="bg-primary text-white py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="contact-info">
+        <i class="fas fa-phone-alt me-2"></i>0755-4085500
+        <span class="mx-3">|</span>
+        <i class="fas fa-envelope me-2"></i>contactus@nrigroupindia.com
+      </div>
+      <a class="nav-link text-white" href="ERP.html">Student Login</a>
+      <div class="social-icons">
+        <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="nl1-removebg-preview.png" alt="" width="50" height="50">
+        <span style="font-size: 30px;">NRI GROUP OF INSTITUTIONS</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="scholarshipDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Group of Institutions
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="scholarshipDropdown">
+              <li><a class="dropdown-item" href="NIIST.html">NRI Institution of Informtaion Science and Technology
+                  (NIIST) </a></li>
+              <li><a class="dropdown-item" href="NVISMT.html">NRI Vidyadayaini Institution of Science, Mgt & Technology
+                  (NVISMT)</a></li>
+              <li><a class="dropdown-item" href="paramedical.html">NRI Institute of Paramedical Science</a></li>
+              <li><a class="dropdown-item" href="NIRT.html">NRI Institute of Research and Technology (NIPS)</a></li>
+              <li><a class="dropdown-item" href="NIPS.html">NRI Institute of Pharmaceutical Science (NIPS)</a></li>
+              <li><a class="dropdown-item" href="NIP.html">NRI Institute of Pharmacy (NIP)</a></li>
+              <li><a class="dropdown-item" href="NIRTP.html">NRI Institute of Research and Technology - Pharmacy (NIRTP)</a></li>
+              <li><a class="dropdown-item" href="NIP.html">NRI Institute of Nursing (NIP)</a></li>
+              <li><a class="dropdown-item" href="NINR.html">NRI Institute of Nursing & Research (NINR)</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Programs
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="programsDropdown">
+              <li><a class="dropdown-item" href="#">Undergraduate</a></li>
+              <li><a class="dropdown-item" href="#">Postgraduate</a></li>
+              <li><a class="dropdown-item" href="#">PhD Programs</a></li>
+              <li><a class="dropdown-item" href="#">Diploma Courses</a></li>
+              <li><a class="dropdown-item" href="#">Certificate Courses</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="admission.html">Admissions</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="admission.html" id="flyerDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="true">
+              Flyer
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="flyerDropdown">
+              <li><a class="dropdown-item" href="#">Brochure 2024</a></li>
+              <li><a class="dropdown-item" href="#">Academic Calendar</a></li>
+              <li><a class="dropdown-item" href="#">Campus Map</a></li>
+            </ul>
+          </li>
+         
+          <li class="nav-item"><a class="nav-link" href="#">Virtual Tour</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero-section bg-primary text-white text-center py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <img src="happy.jpg" alt="Student Image" class="img-fluid rounded">
+        </div>
+        <div class="col-lg-6">
+          <h2>Admission Open Batch 2024-25</h2>
+          <p class="lead">Empowering Minds, Igniting Futures: Experience the academic brilliance of NRI Group, Bhopal.
+          </p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5gispaYWlKWVf2cCncloSK81ZbrXGmZDNIQ2xVQSpbBis0w/viewform?embedded=true" class="btn btn-warning btn-lg">Apply Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ranking Section -->
+  <section class="ranking-section py-4">
+    <div class="container text-center">
+      <div class="bg-light p-4 rounded">
+        <h5>India Today MDRA Ranking 2023</h5>
+        <div class="d-flex justify-content-center mt-3">
+          <div class="me-4">
+            <h3>Ranked 2<sup>nd</sup></h3>
+            <p>In India</p>
+          </div>
+          <div class="me-4">
+            <h3>Ranked 6<sup>th</sup></h3>
+            <p>In State</p>
+          </div>
+          <div class="me-4">
+            <h3>Ranked 55<sup>th</sup></h3>
+            <p>In All India</p>
+          </div>
+          <div>
+            <h3>Ranked 2<sup>nd</sup></h3>
+            <p>In Central India</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="trending-streams" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Our Trending Streams</h2>
+        <div class="row">
+          <!-- Medical -->
+          <div class="col-md-3 col-sm-6 mb-4">
+           
+              <div class="stream-card text-center">
+                <div class="icon-box">
+                  <i class="bi bi-tree"></i>
+                </div>
+                <h5>Medical</h5>
+              </div>
+            </a>
+          </div>
+          <!-- Commerce -->
+          <div class="col-md-3 col-sm-6 mb-4">
+           
+              <div class="stream-card text-center">
+                <div class="icon-box">
+                  <i class="bi bi-cash"></i>
+                </div>
+                <h5>Commerce</h5>
+              </div>
+            </a>
+          </div>
+          <!-- Computer Science -->
+          <div class="col-md-3 col-sm-6 mb-4">
+         
+              <div class="stream-card text-center">
+                <div class="icon-box">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h5>Computer Science & Application</h5>
+              </div>
+            </a>
+          </div>
+          <!-- Research -->
+          <div class="col-md-3 col-sm-6 mb-4">
+          
+              <div class="stream-card text-center">
+                <div class="icon-box">
+                  <i class="bi bi-search"></i>
+                </div>
+                <h5>Research</h5>
+              </div>
+            </a>
+          </div>
+          <!-- Engineering -->
+          <div class="col-md-3 col-sm-6 mb-4">
+           
+              <div class="stream-card text-center">
+                <div class="icon-box">
+                  <i class="bi bi-gear"></i>
+                </div>
+                <h5>Engineering</h5>
+              </div>
+            </a>
+          </div>
+          <!-- Law -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            
+              <div class="stream-card text-center">
+                <div class="icon-box">
+                  <i class="bi bi-"></i>
+                </div>
+                <h5>Law</h5>
+              </div>
+            </a>
+          </div>
+          <!-- Management -->
+          <div class="col-md-3 col-sm-6 mb-4">
+           
+              <div class="stream-card text-center">
+                <div class="icon-box">
+                  <i class="bi bi-briefcase"></i>
+                </div>
+                <h5>Management</h5>
+              </div>
+            </a>
+          </div>
+          <!-- Arts -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            
+              <div class="stream-card text-center">
+                <div class="icon-box">
+                  <i class="bi bi-palette"></i>
+                </div>
+                <h5>Arts</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="stats-section">
+      <div class="stats-overlay"></div>
+      <div class="container stats-container">
+        <div class="row">
+          <div class="col-md-3 stat-box">
+            <div class="stat-number" data-target="30">0</div>
+            <div class="stat-label">Years Of Academic Expertise</div>
+          </div>
+          <div class="col-md-3 stat-box">
+            <div class="stat-number" data-target="150">0</div>
+            <div class="stat-label">Acre Lush Green Campus</div>
+          </div>
+          <div class="col-md-3 stat-box">
+            <div class="stat-number" data-target="35000">0</div>
+            <div class="stat-label">Placements</div>
+          </div>
+          <div class="col-md-3 stat-box">
+            <div class="stat-number" data-target="50000">0</div>
+            <div class="stat-label">Global Alumni</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Add Bootstrap and JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Counting animation
+      function animateCounter(element) {
+        const target = +element.getAttribute('data-target');
+        const speed = 50; // The higher the value, the slower the animation
+        const increment = Math.ceil(target / speed);
+        let count = 0;
+
+        const updateCounter = () => {
+          count += increment;
+          if (count >= target) {
+            element.textContent = target;
+          } else {
+            element.textContent = count;
+            requestAnimationFrame(updateCounter);
+          }
+        };
+
+        updateCounter();
+      }
+
+      // Trigger animation when the section is in view
+      function startCountingAnimation() {
+        const counters = document.querySelectorAll('.stat-number');
+        counters.forEach(counter => animateCounter(counter));
+      }
+
+      let statsSection = document.querySelector('.stats-section');
+      let started = false;
+
+      // Check if the section is in view
+      function isInView(element) {
+        const rect = element.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom >= 0;
+      }
+
+      const checkAndStartAnimation = () => {
+        if (isInView(statsSection) && !started) {
+          started = true;
+          startCountingAnimation();
+        }
+      };
+
+      window.addEventListener('scroll', checkAndStartAnimation);
+      window.addEventListener('load', checkAndStartAnimation);
+    </script>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+      <div class="container text-center">
+        <p>&copy; 2024 AiMl group. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="nrior.js"></script>
+</body>
+
+</html>
