@@ -72,6 +72,18 @@
             display: block;
             margin-top: 5px;
         }
+        #preview {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        img, video {
+            max-width: 300px;
+            border: 2px solid #00ffcc;
+            box-shadow: 0px 0px 10px rgba(0, 255, 204, 0.8);
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
@@ -79,8 +91,8 @@
 
     <div class="upload-container">
         <h2>Upload Your Media</h2>
-        <input type="file" id="fileInput">
-        <button class="upload-btn" onclick="uploadFile()">Upload</button>
+        <input type="file" id="fileInput" multiple>  <!-- Allows multiple file selection -->
+        <button class="upload-btn" onclick="uploadFiles()">Upload</button>
         
         <!-- Message below upload button -->
         <p class="message">
@@ -91,6 +103,60 @@
 
     <div id="preview"></div>
 
-    <script src="up1.js"></script> 
+    <script>
+        async function uploadFiles() {
+            const fileInput = document.getElementById('fileInput');
+            const files = fileInput.files;
+            if (files.length === 0) {
+                alert("Please select at least one file to upload.");
+                return;
+            }
+
+            for (let file of files) {
+                await uploadSingleFile(file);
+            }
+        }
+
+        async function uploadSingleFile(file) {
+            const formData = new FormData();
+            formData.append("file", file);
+            formData.append("upload_preset", "Rajaram"); // Replace with your Cloudinary preset
+
+            try {
+                const response = await fetch("https://api.cloudinary.com/v1_1/dqj7gfezj/upload", { // Replace with your Cloudinary cloud name
+                    method: "POST",
+                    body: formData
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    showPreview(data.secure_url, file.type);
+                } else {
+                    console.error("Upload failed:", response.statusText);
+                }
+            } catch (error) {
+                console.error("Error uploading file:", error);
+            }
+        }
+
+        function showPreview(url, fileType) {
+            const previewContainer = document.getElementById("preview");
+            let element;
+
+            if (fileType.startsWith("image/")) {
+                element = document.createElement("img");
+                element.src = url;
+            } else if (fileType.startsWith("video/")) {
+                element = document.createElement("video");
+                element.src = url;
+                element.controls = true;
+            } else {
+                return;
+            }
+
+            previewContainer.appendChild(element);
+        }
+    </script>
+
 </body>
 </html>
