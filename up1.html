@@ -58,17 +58,19 @@
             box-shadow: 0px 0px 25px rgba(0, 255, 204, 0.9);
             transform: scale(1.05);
         }
-        #preview {
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
+        .message {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #00ffcc;
+            text-shadow: 0px 0px 5px rgba(0, 255, 204, 0.8);
         }
-        img, video {
-            max-width: 300px;
-            border: 2px solid #00ffcc;
-            box-shadow: 0px 0px 10px rgba(0, 255, 204, 0.8);
+        .raja-ji {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff6600;
+            text-shadow: 0px 0px 15px #ff6600;
+            display: block;
+            margin-top: 5px;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
@@ -79,6 +81,12 @@
         <h2>Upload Your Media</h2>
         <input type="file" id="fileInput">
         <button class="upload-btn" onclick="uploadFile()">Upload</button>
+        
+        <!-- Message below upload button -->
+        <p class="message">
+            The uploaded media will be visible within 24 to 48 hours of uploading.
+            <span class="raja-ji">- Raja ji</span>
+        </p>
     </div>
 
     <div id="preview"></div>
