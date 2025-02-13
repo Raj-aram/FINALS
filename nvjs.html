@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AiML Public Images gallery</title>
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            background: #0f0f0f;
+            color: #00ffcc;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+        .gallery-container {
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border: 2px solid #00ffcc;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 255, 204, 0.5);
+        }
+        h1 {
+            text-transform: uppercase;
+            text-shadow: 0px 0px 15px #00ffcc;
+            font-size: 28px;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+        #my-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        img, video {
+            border: 2px solid #00ffcc;
+            box-sizing: border-box;
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0px 0px 15px rgba(0, 255, 204, 0.7);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="gallery-container">
+        <h1>AiML Public Images Gallery</h1>
+        <div id="my-gallery"></div>
+    </div>
+
+    <script>
+        const mediaFiles = [
+            "https://res.cloudinary.com/dqj7gfezj/image/upload/v1739387422/1525331142800_di79aq.jpg", // Image
+            "https://res.cloudinary.com/dqj7gfezj/video/upload/v1739392417/WhatsApp_Video_2025-01-18_at_22.29.35_e6e6f55f_vxozbb.mp4", // Video
+            "https://res.cloudinary.com/dqj7gfezj/image/upload/v1739436512/WhatsApp_Image_2025-01-18_at_22.28.27_8385ded4_bks7je.jpg"  // Image
+        ];
+
+        const gallery = document.getElementById('my-gallery');
+
+        mediaFiles.forEach(url => {
+            let mediaElement;
+            
+            if (url.includes("/image/upload/")) {
+                mediaElement = document.createElement('img');
+                mediaElement.src = url;
+                mediaElement.alt = "Gallery Image";
+            } else if (url.includes("/video/upload/")) {
+                mediaElement = document.createElement('video');
+                mediaElement.src = url;
+                mediaElement.controls = true;
+                mediaElement.width = 300; 
+            }
+
+            if (mediaElement) {
+                gallery.appendChild(mediaElement);
+            }
+        });
+    </script>
+
+</body>
+</html>
